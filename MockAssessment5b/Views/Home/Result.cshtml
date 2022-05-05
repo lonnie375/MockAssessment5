@@ -1,0 +1,19 @@
+﻿@model Person
+
+<!-- Display the users name and age -->
+
+<p>@Model.UserName</p>
+
+<p>@Model.Age</p>
+
+@if(@Model.CanDrive){
+    <p>This person can drive!</p>
+}
+
+@if(@Model.CanDrink){
+    <h2>This person can drink!</h2>
+}
+else 
+{
+    <h1>Sorry, you're to young to drink.</h1>
+}
